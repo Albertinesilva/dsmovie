@@ -11,7 +11,7 @@ function Listing() {
     axios.get('http://localhost:8080/movies?size=12&page=0').then(response =>{
         console.log(response.data)
     })*/
-
+ 
     const [pageNumber, setPageNumber] = useState(0);
 
     const [page, setPage] = useState<MoviePage>({
@@ -30,7 +30,8 @@ function Listing() {
         axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`).then(response => {
             const data = response.data as MoviePage;
             setPage(data);
-        })
+            
+        });
     }, [pageNumber]);
 
     return (
@@ -44,7 +45,7 @@ function Listing() {
                             <MovieCard movie={movie} />
                         </div>
                     )
-                    )}
+                    )};
                 </div>
             </div>
         </>
