@@ -1,5 +1,6 @@
 import { ReactComponent as GithubIcon } from 'assets/img/github.svg';
 import './styles.css';
+
 function Navbar() {
 
     return (
@@ -8,7 +9,7 @@ function Navbar() {
                 <div className="dsmovie-nav-content">
                     <h1>DSMovie</h1>
                     <a href="https://www.itaguari.com.br/categoria/cinema/">
-                        <div className="dsmovie-contact-conteiner">
+                        <div className="dsmovie-contact-container">
                             <GithubIcon />
                             <p className="dsmovie-contact-link">/devsuperior</p>
                         </div>
