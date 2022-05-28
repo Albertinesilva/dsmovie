@@ -10,7 +10,7 @@ function Listing() {
     /*FORMA ERRADA
     axios.get('http://localhost:8080/movies?size=12&page=0').then(response =>{
         console.log(response.data)
-    })*/
+    });*/
  
     const [pageNumber, setPageNumber] = useState(0);
 
@@ -23,7 +23,7 @@ function Listing() {
         number: 0,
         first: true,
         numberOfElements: 0,
-        empty: true,
+        empty: true
     });
 
     useEffect(() => {
