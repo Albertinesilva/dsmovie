@@ -11,7 +11,7 @@ function Navbar() {
                     <a href="https://www.itaguari.com.br/categoria/cinema/">
                         <div className="dsmovie-contact-container">
                            <GithubIcon />
-                                                    
+                                                
                             <p className="dsmovie-contact-link">/Filmes em Cartaz</p>
                         </div>
                     </a>
