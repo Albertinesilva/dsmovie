@@ -10,8 +10,7 @@ function Navbar() {
                     <h1>Avaliar Filmes</h1>
                     <a href="https://www.itaguari.com.br/categoria/cinema/">
                         <div className="dsmovie-contact-container">
-                           <GithubIcon />
-                                                
+                            <GithubIcon />
                             <p className="dsmovie-contact-link">/Filmes em Cartaz</p>
                         </div>
                     </a>
