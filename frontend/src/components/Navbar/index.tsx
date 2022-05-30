@@ -1,4 +1,4 @@
-import { ReactComponent as FilmeCartazIcon } from 'assets/img/archive-fill.svg';
+import { ReactComponent as FilmeCartazIcon } from 'assets/img/camera.svg';
 import './styles.css';
 
 function Navbar() {
