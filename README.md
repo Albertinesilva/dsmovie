@@ -4,7 +4,7 @@
   <img src="https://img.icons8.com/color/30/000000/react-native.png"/>
 </h1>
 
-DSMovie é uma aplicação full-stack, responsiva, desenvolvida para a avaliação de filmes. Este projeto foi realizado em monorepo, utiliza um banco de dados relacional e foi dividido em 4 episódios, nos quais o professor [Nélio Alves]() explica detalhadamente como construir a aplicação. A aplicação foi desenvolvida durante a 6ª edição da Semana [DevSuperior](https://devsuperior.com.br/) (#sds6), um evento promovido pela DevSuperior.
+DSMovie é uma aplicação full-stack, responsiva, desenvolvida para a avaliação de filmes. Este projeto foi realizado em monorepo, utiliza um banco de dados relacional e foi dividido em 4 episódios, nos quais o professor [Nélio Alves](https://github.com/acenelio) explica detalhadamente como construir a aplicação. A aplicação foi desenvolvida durante a 6ª edição da Semana [DevSuperior](https://devsuperior.com.br/) (#sds6), um evento promovido pela DevSuperior.
 
 A proposta principal do DSMovie é permitir que os usuários avaliem filmes por meio de um formulário simples, atribuindo uma nota de 1 a 5. Essas avaliações são armazenadas e exibidas tanto no app web quanto na versão mobile da aplicação.  
 
@@ -24,9 +24,33 @@ Além disso, a aplicação **também agrega valor para os usuários**, possibili
 
 ---
 
+## Layout web
+![Web1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web.png)
+![Web1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web2.png)
+![Web2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web3.png)
+![Web3](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web4.png)
 
-# ![DevSuperior logo](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) Semana Spring React
-Projeto de app full-stack responsivo de avaliação de filmes, realizado em monorepo e com armazenamento em banco de dados relacional dividido em 4 episódios, onde cada episódio o professor [Nelio Alves](https://github.com/acenelio) explica passo-a-passo para realizá-lo. O site em deploy pode ser visto <a href="https://dsmovie-project.netlify.app/" target="_blank">aqui</a>.
+## Conceptual model
+![Modelo Conceitual](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/MC.png)
+
+## Layout mobile
+![Mobile 1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile1.png) ![Mobile 2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile2.png)
+
+#### Padrão camadas adotado
+
+![Image](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/padrao-camadas.png "Padrão camadas")
+
+#### Lógica:
+
+1) Informar email, id do filme e valor da avaliação (1 a 5).
+
+2) Recuperar usuário do banco de dados pelo email. Se o usuário não existir, insira no banco.
+
+3) Salvar a avaliação do usuário para o dado filme.
+
+4) Recalcular a avaliação média do filme e salvar no banco de dados.
+
+![Image](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/dsmovie-objs.png "Padrão camadas")
 
 ## Tecnologias
 O sistema utiliza React em seu front-end e Spring no back-end.
