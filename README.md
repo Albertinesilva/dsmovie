@@ -4,11 +4,11 @@
   <img src="https://img.icons8.com/color/30/000000/react-native.png"/>
 </h1>
 
-DSMovie é uma aplicação full-stack, responsiva, desenvolvida para a avaliação de filmes. Este projeto foi realizado em monorepo, utiliza um banco de dados relacional e foi dividido em 4 episódios, nos quais o professor [Nélio Alves](https://github.com/acenelio) explica detalhadamente como construir a aplicação. A aplicação foi desenvolvida durante a 6ª edição da Semana [DevSuperior](https://devsuperior.com.br/) (#sds6), um evento promovido pela DevSuperior.
+📝 DSMovie é uma aplicação full-stack, responsiva, desenvolvida para a avaliação de filmes. Este projeto foi realizado em monorepo, utiliza um banco de dados relacional e foi dividido em 4 episódios, nos quais o professor [Nélio Alves](https://github.com/acenelio) explica detalhadamente como construir a aplicação. A aplicação foi desenvolvida durante a 6ª edição da Semana [DevSuperior](https://devsuperior.com.br/) (#sds6), um evento promovido pela DevSuperior.
 
 A proposta principal do DSMovie é permitir que os usuários avaliem filmes por meio de um formulário simples, atribuindo uma nota de 1 a 5. Essas avaliações são armazenadas e exibidas tanto no app web quanto na versão mobile da aplicação.  
 
-🔗 O site em deploy pode ser visualizado [aqui](https://dsmovie-portfolio.netlify.app/).
+🌐 O site em deploy pode ser visualizado [aqui](https://dsmovie-portfolio.netlify.app/).
 
 ---
 
@@ -24,7 +24,7 @@ Além disso, a aplicação **também agrega valor para os usuários**, possibili
 
 ---
 
-### 📌 Modelo Conceitual
+### 📊 Modelo Conceitual
 
 ![Modelo Conceitual](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/MC.png)
 
@@ -34,7 +34,7 @@ Além disso, a aplicação **também agrega valor para os usuários**, possibili
 
 O projeto DSMovie foi desenvolvido utilizando uma stack moderna para backend e frontend, garantindo escalabilidade, segurança e performance.
 
-### 📌 **Backend**
+### ⚙️ **Backend**
 O backend da aplicação foi implementado em **Java** com **Spring Boot**, seguindo o padrão **MVC** e boas práticas de desenvolvimento.
 
 - **Linguagem:** Java (JDK 17)
@@ -81,7 +81,7 @@ A aplicação foi implantada em serviços cloud para garantir disponibilidade e 
 - **Banco de Dados:** PostgreSQL
 ---
 
-### 🔗 **Integração entre Backend e Frontend**
+### 🔁 **Integração entre Backend e Frontend**
 A comunicação entre as camadas do sistema foi feita por meio de **API REST** no backend e consumo via **Axios** no frontend.
 
 - **Três pilares do React:**
@@ -94,7 +94,7 @@ A comunicação entre as camadas do sistema foi feita por meio de **API REST** n
   - API REST estruturada em camadas
 ---
 
-### 🏗️ Arquitetura e Lógica do Projeto
+### 🧱 Arquitetura e Lógica do Projeto
 
 A aplicação DSMovie segue uma estrutura de **backend em Spring Boot** e **frontend em React**, organizados de forma modular para garantir escalabilidade e fácil manutenção.
 
@@ -110,14 +110,14 @@ O sistema permite que os usuários avaliem filmes seguindo os passos abaixo:
 4️⃣ **A média das avaliações** do filme é recalculada e salva no banco.
 ---
 
-### 📌 Representação da Lógica do Sistema
+### 🌀 Representação da Lógica do Sistema
 A imagem abaixo ilustra o funcionamento do processo de avaliação:
 
 ![Fluxo de Lógica](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/dsmovie-objs.png "Fluxo de Lógica")
 
 ---
 
-### 📌 Padrão de Camadas Adotado
+### 📚 Padrão de Camadas Adotado
 O sistema segue uma arquitetura em camadas, conforme o esquema abaixo:
 
 ![Padrão de Camadas](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/padrao-camadas.png)
