@@ -24,18 +24,72 @@ Além disso, a aplicação **também agrega valor para os usuários**, possibili
 
 ---
 
-## 📌 Modelo Conceitual
+### 📌 Modelo Conceitual
 
 ![Modelo Conceitual](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/MC.png)
 
-## 🚀 Tecnologias Utilizadas
+---
 
-O projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
+### 🚀 Tecnologias Utilizadas
 
-- **Backend:** Spring Boot, JPA / Hibernate, Banco de Dados H2 / PostgreSQL
-- **Frontend:** React, TypeScript, Axios, React Router, Bootstrap
-- **Implantação:** Netlify (frontend), Heroku (backend)
-- **Outras ferramentas:** Postman, VS Code, Git/GitHub
+O projeto DSMovie foi desenvolvido utilizando uma stack moderna para backend e frontend, garantindo escalabilidade, segurança e performance.
+
+### 📌 **Backend**
+O backend da aplicação foi implementado em **Java** com **Spring Boot**, seguindo o padrão **MVC** e boas práticas de desenvolvimento.
+
+- **Linguagem:** Java (JDK 17)
+- **Framework:** Spring Boot
+- **Módulos:**
+  - Spring Web (API REST)
+  - Spring Data JPA / Hibernate (Persistência)
+- **Banco de Dados:**
+  - H2 (ambiente de desenvolvimento)
+  - PostgreSQL (produção)
+  - pgAdmin (gerenciamento do banco)
+- **Ferramentas:**
+  - Maven (gerenciamento de dependências)
+  - Postman / cURL (testes de API)
+  - STS (Spring Tool Suite) / IntelliJ IDEA (IDE)
+  - Heroku CLI (implantação na nuvem)
+  - Git / GitHub: Utilizado para controle de versão e colaboração no código. O projeto segue a estratégia de **monorepo**, onde tanto o back-end quanto o front-end são mantidos no mesmo repositório.
+
+### 🎨 **Frontend**
+O frontend foi desenvolvido utilizando **ReactJS** e **TypeScript**, seguindo os princípios de componentes reutilizáveis.
+
+- **Linguagens e Tecnologias:**
+  - HTML / CSS / JavaScript
+  - TypeScript
+  - ReactJS / React Native
+- **Bibliotecas e Ferramentas:**
+  - React Router DOM (gerenciamento de rotas)
+  - React Hooks (`useState`, `useEffect`, `useParams`, `useNavigate`)
+  - Apex Charts (gráficos interativos)
+  - Axios (requisições HTTP)
+  - Bootstrap (estilização responsiva)
+  - Expo (desenvolvimento mobile)
+- **Ambiente de Desenvolvimento:**
+  - Node.js 16.x
+  - VS Code (IDE principal)
+
+### ☁️ **Implantação e Infraestrutura**
+A aplicação foi implantada em serviços cloud para garantir disponibilidade e escalabilidade.
+
+- **Backend:** Heroku
+- **Frontend Web:** Netlify
+- **Banco de Dados:** PostgreSQL
+
+### 🔗 **Integração entre Backend e Frontend**
+A comunicação entre as camadas do sistema foi feita por meio de **API REST** no backend e consumo via **Axios** no frontend.
+
+- **Três pilares do React:**
+  - Componentes
+  - Props
+  - Estado
+- **Padrão arquitetural:**
+  - Modelo de domínio
+  - Acesso a banco de dados
+  - API REST estruturada em camadas
+---
 
 ## 🏗️ Arquitetura e Lógica do Projeto
 
