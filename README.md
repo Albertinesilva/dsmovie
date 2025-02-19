@@ -24,33 +24,58 @@ Além disso, a aplicação **também agrega valor para os usuários**, possibili
 
 ---
 
-## Layout web
-![Web1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web.png)
-![Web1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web2.png)
-![Web2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web3.png)
-![Web3](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web4.png)
+## 📌 Modelo Conceitual
 
-## Conceptual model
 ![Modelo Conceitual](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/MC.png)
 
-## Layout mobile
-![Mobile 1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile1.png) ![Mobile 2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile2.png)
+## 🚀 Tecnologias Utilizadas
 
-#### Padrão camadas adotado
+O projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
-![Image](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/padrao-camadas.png "Padrão camadas")
+- **Backend:** Spring Boot, JPA / Hibernate, Banco de Dados H2 / PostgreSQL
+- **Frontend:** React, TypeScript, Axios, React Router, Bootstrap
+- **Implantação:** Netlify (frontend), Heroku (backend)
+- **Outras ferramentas:** Postman, VS Code, Git/GitHub
 
-#### Lógica:
+## 🏗️ Arquitetura e Lógica do Projeto
 
-1) Informar email, id do filme e valor da avaliação (1 a 5).
+A aplicação DSMovie segue uma estrutura de **backend em Spring Boot** e **frontend em React**, organizados de forma modular para garantir escalabilidade e fácil manutenção.
 
-2) Recuperar usuário do banco de dados pelo email. Se o usuário não existir, insira no banco.
+### 🔄 Fluxo da Lógica de Avaliação
 
-3) Salvar a avaliação do usuário para o dado filme.
+O sistema permite que os usuários avaliem filmes seguindo os passos abaixo:
 
-4) Recalcular a avaliação média do filme e salvar no banco de dados.
+1️⃣ **O usuário informa** o email, o ID do filme e a nota (de 1 a 5).  
+2️⃣ **O sistema verifica** se o usuário já existe no banco de dados:
+   - Se existir, continua o processo.
+   - Se não existir, um novo usuário é cadastrado.  
+3️⃣ **A avaliação do usuário** é salva no banco de dados para o filme selecionado.  
+4️⃣ **A média das avaliações** do filme é recalculada e salva no banco.  
 
-![Image](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/dsmovie-objs.png "Padrão camadas")
+### 📌 Representação da Lógica do Sistema
+A imagem abaixo ilustra o funcionamento do processo de avaliação:
+
+![Fluxo de Lógica](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/dsmovie-objs.png "Fluxo de Lógica")
+
+### 📌 Padrão de Camadas Adotado
+O sistema segue uma arquitetura em camadas, conforme o esquema abaixo:
+
+![Padrão de Camadas](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/padrao-camadas.png)
+
+## 🎨 Interface do Usuário
+
+A seguir, algumas imagens da interface do usuário no **web** e **mobile**:
+
+### 🖥️ Layout Web  
+![Web1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web.png)  
+![Web2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web2.png)  
+![Web3](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web3.png)  
+![Web4](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web4.png)  
+
+### 📱 Layout Mobile  
+![Mobile 1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile1.png) ![Mobile 2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile2.png) 
+
+
 
 ## Tecnologias
 O sistema utiliza React em seu front-end e Spring no back-end.
