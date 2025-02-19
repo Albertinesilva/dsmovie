@@ -52,6 +52,7 @@ O backend da aplicação foi implementado em **Java** com **Spring Boot**, segui
   - STS (Spring Tool Suite) / IntelliJ IDEA (IDE)
   - Heroku CLI (implantação na nuvem)
   - Git / GitHub: Utilizado para controle de versão e colaboração no código. O projeto segue a estratégia de **monorepo**, onde tanto o back-end quanto o front-end são mantidos no mesmo repositório.
+---
 
 ### 🎨 **Frontend**
 O frontend foi desenvolvido utilizando **ReactJS** e **TypeScript**, seguindo os princípios de componentes reutilizáveis.
@@ -70,6 +71,7 @@ O frontend foi desenvolvido utilizando **ReactJS** e **TypeScript**, seguindo os
 - **Ambiente de Desenvolvimento:**
   - Node.js 16.x
   - VS Code (IDE principal)
+---
 
 ### ☁️ **Implantação e Infraestrutura**
 A aplicação foi implantada em serviços cloud para garantir disponibilidade e escalabilidade.
@@ -77,6 +79,7 @@ A aplicação foi implantada em serviços cloud para garantir disponibilidade e 
 - **Backend:** Heroku
 - **Frontend Web:** Netlify
 - **Banco de Dados:** PostgreSQL
+---
 
 ### 🔗 **Integração entre Backend e Frontend**
 A comunicação entre as camadas do sistema foi feita por meio de **API REST** no backend e consumo via **Axios** no frontend.
@@ -91,7 +94,7 @@ A comunicação entre as camadas do sistema foi feita por meio de **API REST** n
   - API REST estruturada em camadas
 ---
 
-## 🏗️ Arquitetura e Lógica do Projeto
+### 🏗️ Arquitetura e Lógica do Projeto
 
 A aplicação DSMovie segue uma estrutura de **backend em Spring Boot** e **frontend em React**, organizados de forma modular para garantir escalabilidade e fácil manutenção.
 
@@ -104,19 +107,24 @@ O sistema permite que os usuários avaliem filmes seguindo os passos abaixo:
    - Se existir, continua o processo.
    - Se não existir, um novo usuário é cadastrado.  
 3️⃣ **A avaliação do usuário** é salva no banco de dados para o filme selecionado.  
-4️⃣ **A média das avaliações** do filme é recalculada e salva no banco.  
+4️⃣ **A média das avaliações** do filme é recalculada e salva no banco.
+---
 
 ### 📌 Representação da Lógica do Sistema
 A imagem abaixo ilustra o funcionamento do processo de avaliação:
 
 ![Fluxo de Lógica](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/dsmovie-objs.png "Fluxo de Lógica")
 
+---
+
 ### 📌 Padrão de Camadas Adotado
 O sistema segue uma arquitetura em camadas, conforme o esquema abaixo:
 
 ![Padrão de Camadas](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/padrao-camadas.png)
 
-## 🎨 Interface do Usuário
+---
+
+### 🎨 Interface do Usuário
 
 A seguir, algumas imagens da interface do usuário no **web** e **mobile**:
 
@@ -126,143 +134,70 @@ A seguir, algumas imagens da interface do usuário no **web** e **mobile**:
 ![Web3](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web3.png)  
 ![Web4](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/web4.png)  
 
+---
+
 ### 📱 Layout Mobile  
 ![Mobile 1](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile1.png) ![Mobile 2](https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile2.png) 
 
+---
 
+## ☁️ Passo: Implantação no Heroku
 
-## Tecnologias
-O sistema utiliza React em seu front-end e Spring no back-end.
+### Criar App no Heroku
+- Crie um novo app no Heroku.
 
-## Objetivos
-O projeto possui objetivos a cada episódio, a saber:
+### Provisionar Banco PostgreSQL
+- No painel do Heroku, adicione o serviço Heroku Postgres.
 
-- **Episódio 1 - Spring e React no mercado**: 
-    - Criar projetos back-end e front-end
-    - Salvar os projeto no Github em monorepo
-    - Montar o visual estático do front-end
-    
-- **Episódio 2 - Aprofundando na Prática**: 
-    - Implementar o back-end
-    - Modelo de domínio
-    - Acesso a banco de dados
-    - Estruturar o back end no padrão camadas
-    - Criar endpoints da API REST
-    - Implantação na nuvem
+### Definir Variável de Ambiente
+- Defina a variável `APP_PROFILE=prod` no Heroku.
 
-- **Episódio 3 - O Mapa da Carreira**: 
-    - Integrar back-end e front-end
-    - Três pilares do React
-        - Componentes
-        - Props
-        - Estado
-    - React Hooks
-        - useState
-        - useEffect
-        - useParams
-        - useNavigate
+### Conectar ao Banco via pgAdmin
+- Conecte o pgAdmin ao banco PostgreSQL usando as credenciais fornecidas pelo Heroku.
 
-- **Episódio 4 - Dúvidas Respondidas**: 
-    - Sanar dúvidas dos alunos nos canais de comunicação
+---
+
+### Deploy do Backend
+1. Faça login no Heroku:
+   ```bash
+   heroku login
+
+2. Conecte o repositório ao Heroku:
+      ```bash
+      heroku git:remote -a <nome-do-app>
+      ```
+
+3. Faça o deploy do backend para o Heroku:
+      ```bash
+      git subtree push --prefix backend heroku main
+      ```
+
+---
+
+☁️ Passo: Implantação no Netlify
+Criar Site no Netlify
+- Crie um novo site no Netlify a partir do repositório GitHub.
+
+Configurações de Deploy
+- Base directory: frontend
+
+- Build command: yarn build
+
+- Publish directory: frontend/build
+
+Arquivo _redirects
+- No diretório frontend/public, crie o arquivo _redirects com o seguinte conteúdo:
+  ```bash
+  /* /index.html 200
+  ```
+
+Configurações Adicionais
+- Defina o nome do site em Site settings -> Domain Management.
+
+- Trigger deploy em Deploys -> Trigger deploy.
+
+---
+
 
 ### Objetivos pessoais 
 O objetivo deste treinamento é aprofundar meus conhecimentos em Spring, framework do Java, e compreender o funcionamento full-stack de uma aplicação. Apesar de React não ser a ferramenta da minha stack, percebo aproximações conceituais com o framework que utilizo (no caso, Angular) e o treinamento tem contribuído para agregar conhecimentos. 
-
-## Funcionalidades
-- Tela Home (início): Tela inicial, onde mostra a lista de filmes cadastradas com páginas de navegação.
-- Tela de Cadastro: Tela para cadastro e armazenamento de informações da Tela Home.
-
-## Realização
-[DevSuperior - Escola de programação](https://devsuperior.com.br)
-
-[![DevSuperior no Instagram](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/ig-icon.png)](https://instagram.com/devsuperior.ig)
-[![DevSuperior no Youtube](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/yt-icon.png)](https://youtube.com/devsuperior)
-
-
-> Status do projeto: Concluído :heavy_check_mark:
-
-
-# ![DevSuperior logo](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) Semana Spring React
-## Ferramentas Utilizadas no projeto:
-
-- Curl
-- Git
-- Java JDK 11 ou 17
-- Maven
-- STS
-- Postman
-- Postgresql e pgAdmin
-- Heroku CLI
-- NodeJS 16.x 
-- VS Code
-
-[![DevSuperior no Instagram](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/ig-icon.png)](https://instagram.com/devsuperior.ig)
-[![DevSuperior no Youtube](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/yt-icon.png)](https://youtube.com/devsuperior)
-
-## Objetivos do projeto 
-- Implementar o back end
-- Modelo de domínio
-- Acesso a banco de dados
-- Estruturar o back end no padrão camadas
-- Criar endpoints da API REST
-- Implantação na nuvem
-
-    
-#### Modelo conceitual
-![Image](https://raw.githubusercontent.com/devsuperior/bds-assets/main/sds/dsmovie-dominio.png "Modelo conceitual")
-
-#### Padrão camadas adotado
-
-![Image](https://github.com/devsuperior/bds-assets/raw/main/sds/padrao-camadas.png "Padrão camadas")
-
-- Criar repository
-- Criar DTO
-- Criar service
-- Criar controller
-- **COMMIT: Find movies**
-
-### Passo: Salvar avaliação
-
-#### Lógica:
-
-1) Informar email, id do filme e valor da avaliação (1 a 5).
-
-2) Recuperar usuário do banco de dados pelo email. Se o usuário não existir, insira no banco.
-
-3) Salvar a avaliação do usuário para o dado filme.
-
-4) Recalcular a avaliação média do filme e salvar no banco de dados.
-
-![Image](https://raw.githubusercontent.com/devsuperior/bds-assets/main/sds/dsmovie-objs.png "Padrão camadas")
-
-
-### Passo: Implantação no Heroku
-- Criar app no Heroku
-- Provisionar banco Postgres
-- Definir variável APP_PROFILE=prod
-- Conectar ao banco via pgAdmin
-- Criar seed do banco
-
-```bash
-heroku -v
-heroku login
-heroku git:remote -a <nome-do-app>
-git remote -v
-git subtree push --prefix backend heroku main
-```
-
-
-### Passo: implantação no Netlify
-- Deploy básico
-  - Base directory: frontend
-  - Build command: yarn build
-  - Publish directory: frontend/build
-
-- Arquivo _redirects
-```
-/* /index.html 200
-```
-
-- Configurações adicionais
-  - Site settings -> Domain Management: (colocar o nome que você quiser)
-  - Deploys -> Trigger deploy
