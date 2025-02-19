@@ -137,7 +137,7 @@ A seguir, algumas imagens da interface do usuário no **web** e **mobile**:
 ---
 
 ### 📱 Layout Mobile  
-<img src="https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile1.png" width="300" height="auto"> &nbsp;&nbsp; <img src="https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile2.png" width="300" height="auto"> &nbsp;&nbsp; <img src="https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile3.png" width="300" height="auto">
+<img src="https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile1.png" width="200" height="auto"> &nbsp; <img src="https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile2.png" width="200" height="auto"> &nbsp; <img src="https://github.com/Albertinesilva/dsmovie/blob/main/_assets/mobile3.png" width="200" height="auto">
 
 ---
 
