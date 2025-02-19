@@ -198,6 +198,37 @@ Configurações Adicionais
 
 ---
 
+## 🎉 Conclusão
 
-### Objetivos pessoais 
-O objetivo deste treinamento é aprofundar meus conhecimentos em Spring, framework do Java, e compreender o funcionamento full-stack de uma aplicação. Apesar de React não ser a ferramenta da minha stack, percebo aproximações conceituais com o framework que utilizo (no caso, Angular) e o treinamento tem contribuído para agregar conhecimentos. 
+Ao longo do desenvolvimento do projeto **DSMovie**, adquiri uma série de conhecimentos e habilidades valiosas que ampliaram minha compreensão sobre **desenvolvimento web full-stack**. 
+
+### Principais aprendizados:
+
+- **Desenvolvimento Backend com Spring Boot:**
+  - Aprendi a criar uma aplicação backend estruturada com **Spring Boot**, utilizando o padrão de projeto **MVC** e integrando com **JPA** e **Hibernate** para a persistência de dados.
+  - Trabalhei com **Banco de Dados PostgreSQL** e usei **pgAdmin** para gerenciar a base de dados e realizar conexões eficientes.
+  - A implementação de **API REST** foi um ponto chave, permitindo a comunicação entre o **backend** e o **frontend**.
+
+- **Gestão de Dependências e Deploy:**
+  - Ganhei experiência no uso do **Maven** para gerenciamento de dependências.
+  - Realizei o **deploy do backend no Heroku** e aprendi a configurar variáveis de ambiente e conectar o banco PostgreSQL para garantir o funcionamento da aplicação na nuvem.
+  - Implantei o **frontend no Netlify**, configurando o build e criando redirecionamentos para garantir uma navegação suave.
+
+- **Desenvolvimento Frontend com ReactJS:**
+  - Trabalhei com **ReactJS** e **TypeScript** para construir a interface do usuário, criando componentes reutilizáveis e interativos.
+  - Implementei o **React Router** para navegação e usei **React Hooks** como `useState`, `useEffect` e `useParams` para gerenciar estado e efeitos colaterais na aplicação.
+  - Aprendi a consumir APIs utilizando **Axios**, integrando o frontend com o backend de maneira eficiente.
+
+- **Integração Backend e Frontend:**
+  - Aprendi como integrar o **backend e o frontend** utilizando **API REST** para comunicação e compartilhamento de dados.
+  - Explorei o conceito de **monorepo** no **Git/GitHub**, permitindo o controle de versão de ambos os componentes do projeto (backend e frontend) em um único repositório.
+
+- **Melhorias de Infraestrutura:**
+  - Ao longo do processo, aprendi a configurar ferramentas de deploy, incluindo o uso do **Heroku CLI** para realizar o deploy do backend e o uso de **Netlify** para o deploy do frontend.
+  - Refinei o entendimento sobre a configuração de **banco de dados** e a **geração de seeds** para preencher dados iniciais no banco de dados da aplicação.
+
+Este projeto foi uma excelente oportunidade para colocar em prática conceitos de **desenvolvimento web full-stack**, **deploy** na nuvem e **integração de sistemas**, além de aprimorar minha habilidade em trabalhar com tecnologias modernas no ecossistema Java e JavaScript.
+
+---
+
+### 🧑‍💻 **[Albert](https://www.linkedin.com/in/albert-backend-java-spring-boot/)**
