@@ -42,6 +42,7 @@ O backend da aplicação foi implementado em **Java** com **Spring Boot**, segui
 - **Módulos:**
   - Spring Web (API REST)
   - Spring Data JPA / Hibernate (Persistência)
+  - Spring Security e CORS (Configuração de segurança e controle de acesso entre origens)
 - **Banco de Dados:**
   - H2 (ambiente de desenvolvimento)
   - PostgreSQL (produção)
