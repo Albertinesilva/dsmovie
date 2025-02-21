@@ -8,7 +8,7 @@
 
 A proposta principal do DSMovie é permitir que os usuários avaliem filmes por meio de um formulário simples, atribuindo uma nota de 1 a 5. Essas avaliações são armazenadas e exibidas tanto no app web quanto na versão mobile da aplicação.  
 
-🌐 O site em deploy pode ser visualizado [aqui](https://dsmovie-portfolio.netlify.app/).
+🌐[ Acesse o site em deploy](https://dsmovie-portfolio.netlify.app/). O backend no Heroku pode demorar alguns segundos para responder, mas logo as imagens aparecerão. 🚀
 
 ---
 
