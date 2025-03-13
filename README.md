@@ -231,5 +231,6 @@ Ao longo do desenvolvimento do projeto **DSMovie**, adquiri uma série de conhec
 Este projeto foi uma excelente oportunidade para colocar em prática conceitos de **desenvolvimento web full-stack**, **deploy** na nuvem e **integração de sistemas**, além de aprimorar minha habilidade em trabalhar com tecnologias modernas no ecossistema Java e JavaScript.
 
 ---
-
-### 🧑‍💻 **[Albert](https://www.linkedin.com/in/albert-backend-java-spring-boot/)**
+| 🌎 LinkedIn | 👨‍💻 **Autor** |
+|------------|---------------|
+| [LinkedIn](https://www.linkedin.com/in/albert-backend-java-spring-boot/) | [Albert Silva](https://www.linkedin.com/in/albert-backend-java-spring-boot/) |
